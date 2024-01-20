@@ -7,7 +7,7 @@
             
         </div>
         <div class="p-2">
-            <div class="bg-orange-300 shadow">
+            <div class="bg-orange-300 shadow rounded">
                 <h2 class="p-2"><?= $anime->title?></h2>
                 <span class="p-2">Other Names: <?= $anime->title_japanese?></span>
             </div>
@@ -18,8 +18,8 @@
             </div>
         </div>
     </div>
-    <div>
-        
+    <div class="p-4 h-32 text-ellipsis overflow-hidden">
+        <?= $anime->synopsis?>
     </div>
 </div>
 <?= $this->endSection() ?>

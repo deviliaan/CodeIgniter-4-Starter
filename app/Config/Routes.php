@@ -34,6 +34,7 @@ $routes->setAutoRoute(false);
 $routes->get('/', 'Home::index');
 $routes->group('admin',['filter'=>'auth'] ,function($route){
     $route->get('recent','Admin::recent');
+    $route->get('logout','Admin::logout');
     $route->get('anime/(:num)','Admin::anime/$1');
 });
 $routes->get('/admin-panel','Admin::index');

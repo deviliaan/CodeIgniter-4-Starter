@@ -781,3 +781,10 @@ CRITICAL - 2024-01-20 13:56:36 --> Call to undefined method CodeIgniter\Session\
 #3 /workspace/CodeIgniter-4-Starter/public/index.php(39): CodeIgniter\CodeIgniter->run()
 #4 /workspace/CodeIgniter-4-Starter/system/Commands/Server/rewrite.php(43): require_once('...')
 #5 {main}
+CRITICAL - 2024-01-20 14:14:21 --> Call to undefined method CodeIgniter\Session\Session::sess_destroy()
+#0 /workspace/CodeIgniter-4-Starter/system/CodeIgniter.php(832): App\Controllers\Admin->logout()
+#1 /workspace/CodeIgniter-4-Starter/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /workspace/CodeIgniter-4-Starter/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /workspace/CodeIgniter-4-Starter/public/index.php(39): CodeIgniter\CodeIgniter->run()
+#4 /workspace/CodeIgniter-4-Starter/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}

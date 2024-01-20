@@ -12,6 +12,9 @@
   <a class="hover:shadow hover:cursor-pointer p-2 rounded" href="/home">Home</a>
   <a class="hover:shadow p-2 rounded" href="/dubbed">Dubbed</a>
   <a class="hover:shadow p-2 rounded" href="/admin/recent">Admin Area</a>
+  <?php if(session()->has('isLoggedin')){ ?>
+    <a class="hover:shadow p-2 rounded" href="/admin/logout">Logout</a>
+  <?php } ?>
 </div>
 
 <script>

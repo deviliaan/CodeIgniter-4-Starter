@@ -5,13 +5,12 @@ use CodeIgniter\HTTP\RequestTrait;
 class Admin extends BaseController {
     public function index()
     {
-        if($this->session->has('error')){
-            return view('admin-panel',['error'=>$this->session->get('error')]);
-        }else{
-            
-            return view("admin-panel");
-        }
-        
+        return view("admin-panel",['error'=>$this->session->getFlashdata('error')]); 
+    }
+    public function logout() {
+        $this->session->remove('isLoggedin');
+        $this->session->destroy();
+        return redirect()->to('/');
     }
     public function auth()
     {
@@ -21,7 +20,7 @@ class Admin extends BaseController {
             $this->session->set('isLoggedin','true');
             return redirect()->to('/admin/recent');          
         }else{
-            $this->session->set('error','credential missmatch');
+            $this->session->setFlashdata('error','credentials missmatch');
             return redirect()->to('/admin-panel');
         }
     }

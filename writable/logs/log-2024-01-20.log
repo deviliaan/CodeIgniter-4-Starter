@@ -328,3 +328,29 @@ CRITICAL - 2024-01-20 02:40:19 --> Attempt to read property "title" on array
 #8 /workspace/CodeIgniter-4-Starter/public/index.php(39): CodeIgniter\CodeIgniter->run()
 #9 /workspace/CodeIgniter-4-Starter/system/Commands/Server/rewrite.php(43): require_once('...')
 #10 {main}
+CRITICAL - 2024-01-20 03:52:07 --> syntax error, unexpected token "if"
+#0 /workspace/CodeIgniter-4-Starter/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt()
+#1 /workspace/CodeIgniter-4-Starter/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#2 /workspace/CodeIgniter-4-Starter/public/index.php(39): CodeIgniter\CodeIgniter->run()
+#3 /workspace/CodeIgniter-4-Starter/system/Commands/Server/rewrite.php(43): require_once('...')
+#4 {main}
+CRITICAL - 2024-01-20 03:52:57 --> Call to undefined method CodeIgniter\CodeIgniter::get()
+#0 /workspace/CodeIgniter-4-Starter/system/Router/RouteCollection.php(607): CodeIgniter\CodeIgniter->Config\{closure}()
+#1 /workspace/CodeIgniter-4-Starter/app/Config/Routes.php(35): CodeIgniter\Router\RouteCollection->group()
+#2 /workspace/CodeIgniter-4-Starter/system/CodeIgniter.php(713): require('...')
+#3 /workspace/CodeIgniter-4-Starter/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt()
+#4 /workspace/CodeIgniter-4-Starter/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /workspace/CodeIgniter-4-Starter/public/index.php(39): CodeIgniter\CodeIgniter->run()
+#6 /workspace/CodeIgniter-4-Starter/system/Commands/Server/rewrite.php(43): require_once('...')
+#7 {main}
+CRITICAL - 2024-01-20 03:56:16 --> Invalid file: layout/default.php
+#0 /workspace/CodeIgniter-4-Starter/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /workspace/CodeIgniter-4-Starter/system/View/View.php(226): CodeIgniter\View\View->render()
+#2 /workspace/CodeIgniter-4-Starter/system/Common.php(1089): CodeIgniter\View\View->render()
+#3 /workspace/CodeIgniter-4-Starter/app/Controllers/Admin.php(6): view()
+#4 /workspace/CodeIgniter-4-Starter/system/CodeIgniter.php(832): App\Controllers\Admin->recent()
+#5 /workspace/CodeIgniter-4-Starter/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#6 /workspace/CodeIgniter-4-Starter/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /workspace/CodeIgniter-4-Starter/public/index.php(39): CodeIgniter\CodeIgniter->run()
+#8 /workspace/CodeIgniter-4-Starter/system/Commands/Server/rewrite.php(43): require_once('...')
+#9 {main}

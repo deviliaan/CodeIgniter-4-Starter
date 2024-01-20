@@ -10,10 +10,11 @@
 </nav>
 <div class="hidden flex p-2 flex-col" id="mobile-menu">
   <a class="hover:shadow hover:cursor-pointer p-2 rounded" href="/home">Home</a>
-  <a class="hover:shadow p-2 rounded" href="/dubbed">Dubbed</a>
-  <a class="hover:shadow p-2 rounded" href="/admin-panel">Admin-Space</a>
-  <?php if(session()->has('isLoggedin')){ ?>
-    <a class="hover:shadow p-2 rounded" href="/admin/recent">Admin Area</a>
+  <?php if(!session()->has("isLoggedin")) { ?>
+    <a class="hover:shadow p-2 rounded" href="/dubbed">Dubbed</a>
+    <a class="hover:shadow p-2 rounded" href="/admin-panel">Admin-Space</a>
+  <?php } else {?>
+    <a class="hover:shadow p-2 rounded" href="/admin/recent">Recent Area</a>
     <a class="hover:shadow p-2 rounded" href="/admin/logout">Logout</a>
   <?php } ?>
 </div>

@@ -4,7 +4,7 @@
     <div class="grid p-4 gap-2 grid-cols-2">
       <?php
         foreach($animes as $anime){ ?>
-          <?= view_cell('App\Libraries\Card::show',['anime'=>$anime]) ?>
+          <?= view_cell('App\Libraries\Card::show',['anime'=>$anime,'isAdmin'=>false]) ?>
         <?php } ?>
       ?>
     </div>

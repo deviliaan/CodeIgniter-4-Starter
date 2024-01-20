@@ -2,7 +2,7 @@
 namespace App\Libraries;
 
 class Card {
-    public function show($anime) {
-        return view('components/card',['anime'=>$anime]);
+    public function show($anime,$isAdmin) {
+        return view('components/card',['anime'=>$anime,'isAdmin'=>$isAdmin]);
     }
 }

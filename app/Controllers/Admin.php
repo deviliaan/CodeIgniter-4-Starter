@@ -10,7 +10,8 @@ class Admin extends BaseController {
     public function anime($slug){
 
         $info = $this->fetchAnimeInfo($slug);
-        return view('singleAnime',['anime'=>$info]);
+        $anime = json_decode(json_encode($info['data'],FALSE));
+        return view('singleAnime',['anime'=>$anime]);
     }
     function fetchDataFromApi() {
         $client = \Config\Services::curlrequest();

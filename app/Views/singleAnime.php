@@ -1,5 +1,25 @@
 <?= $this->extend('layouts/default'); ?>
 <?= $this->section('content') ?>
-<?= '<pre>' ?>
-<?= print_r($anime)?>
+<div>
+    <div class="grid grid-cols-2 p-2">
+        <div>
+            <img src="<?= $anime->images->jpg->image_url?>"/>
+            
+        </div>
+        <div class="p-2">
+            <div class="bg-orange-300 shadow">
+                <h2 class="p-2"><?= $anime->title?></h2>
+                <span class="p-2">Other Names: <?= $anime->title_japanese?></span>
+            </div>
+            <div class="bg-orange-300 shadow rounded mt-2 flex flex-col">
+                <span class="pl-2">Type: <?= $anime->type?></span>
+                <span class="pl-2">Episodes: <?= $anime->episodes?></span>
+                <span class="pl-2"><?= $anime->status?></span>
+            </div>
+        </div>
+    </div>
+    <div>
+        
+    </div>
+</div>
 <?= $this->endSection() ?>

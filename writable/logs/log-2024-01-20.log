@@ -526,3 +526,39 @@ CRITICAL - 2024-01-20 05:20:12 --> Call to undefined function App\Controllers\fe
 #3 /workspace/CodeIgniter-4-Starter/public/index.php(39): CodeIgniter\CodeIgniter->run()
 #4 /workspace/CodeIgniter-4-Starter/system/Commands/Server/rewrite.php(43): require_once('...')
 #5 {main}
+CRITICAL - 2024-01-20 05:38:24 --> Attempt to read property "jpg" on array
+#0 /workspace/CodeIgniter-4-Starter/app/Views/singleAnime.php(6): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /workspace/CodeIgniter-4-Starter/system/View/View.php(210): include('...')
+#2 /workspace/CodeIgniter-4-Starter/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /workspace/CodeIgniter-4-Starter/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /workspace/CodeIgniter-4-Starter/app/Controllers/Admin.php(14): view()
+#5 /workspace/CodeIgniter-4-Starter/system/CodeIgniter.php(832): App\Controllers\Admin->anime()
+#6 /workspace/CodeIgniter-4-Starter/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /workspace/CodeIgniter-4-Starter/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /workspace/CodeIgniter-4-Starter/public/index.php(39): CodeIgniter\CodeIgniter->run()
+#9 /workspace/CodeIgniter-4-Starter/system/Commands/Server/rewrite.php(43): require_once('...')
+#10 {main}
+CRITICAL - 2024-01-20 05:38:38 --> Attempt to read property "jpg" on array
+#0 /workspace/CodeIgniter-4-Starter/app/Views/singleAnime.php(6): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /workspace/CodeIgniter-4-Starter/system/View/View.php(210): include('...')
+#2 /workspace/CodeIgniter-4-Starter/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /workspace/CodeIgniter-4-Starter/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /workspace/CodeIgniter-4-Starter/app/Controllers/Admin.php(14): view()
+#5 /workspace/CodeIgniter-4-Starter/system/CodeIgniter.php(832): App\Controllers\Admin->anime()
+#6 /workspace/CodeIgniter-4-Starter/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /workspace/CodeIgniter-4-Starter/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /workspace/CodeIgniter-4-Starter/public/index.php(39): CodeIgniter\CodeIgniter->run()
+#9 /workspace/CodeIgniter-4-Starter/system/Commands/Server/rewrite.php(43): require_once('...')
+#10 {main}
+CRITICAL - 2024-01-20 05:40:04 --> Attempt to read property "jpg" on array
+#0 /workspace/CodeIgniter-4-Starter/app/Views/singleAnime.php(8): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /workspace/CodeIgniter-4-Starter/system/View/View.php(210): include('...')
+#2 /workspace/CodeIgniter-4-Starter/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /workspace/CodeIgniter-4-Starter/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /workspace/CodeIgniter-4-Starter/app/Controllers/Admin.php(14): view()
+#5 /workspace/CodeIgniter-4-Starter/system/CodeIgniter.php(832): App\Controllers\Admin->anime()
+#6 /workspace/CodeIgniter-4-Starter/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /workspace/CodeIgniter-4-Starter/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /workspace/CodeIgniter-4-Starter/public/index.php(39): CodeIgniter\CodeIgniter->run()
+#9 /workspace/CodeIgniter-4-Starter/system/Commands/Server/rewrite.php(43): require_once('...')
+#10 {main}

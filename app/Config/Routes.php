@@ -33,10 +33,11 @@ $routes->setAutoRoute(false);
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 $routes->group('admin', function($route){
-    $route->get('/recent','Admin::recent');
-    $route->get('/anime/(:num)','Admin::anime/$1');
-},['filter'=>'auth']);
+    $route->get('recent','Admin::recent');
+    $route->get('anime/(:num)','Admin::anime/$1');
+});
 $routes->get('/admin-panel','Admin::index');
+$routes->post('/admin-panel','Admin::auth');
 /*
  * --------------------------------------------------------------------
  * Additional Routing

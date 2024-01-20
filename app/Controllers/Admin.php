@@ -1,12 +1,17 @@
 <?php
 namespace App\Controllers;
+use CodeIgniter\HTTP\RequestTrait;
 
 class Admin extends BaseController {
     public function index()
     {
         return view("admin-panel");
     }
-    
+    public function auth()
+    {
+        return redirect()->to('/admin/recent');
+    }
+
     public function recent() {
         $data = $this->fetchDataFromApi();
         return view("admin",['items'=>$data['data']]);

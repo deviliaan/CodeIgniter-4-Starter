@@ -788,3 +788,23 @@ CRITICAL - 2024-01-20 14:14:21 --> Call to undefined method CodeIgniter\Session\
 #3 /workspace/CodeIgniter-4-Starter/public/index.php(39): CodeIgniter\CodeIgniter->run()
 #4 /workspace/CodeIgniter-4-Starter/system/Commands/Server/rewrite.php(43): require_once('...')
 #5 {main}
+CRITICAL - 2024-01-20 14:34:28 --> Interface "Codeigniter\Filters\FilterInterface" not found
+#0 /workspace/CodeIgniter-4-Starter/system/Autoloader/Autoloader.php(264): include_once()
+#1 /workspace/CodeIgniter-4-Starter/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#2 /workspace/CodeIgniter-4-Starter/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#3 /workspace/CodeIgniter-4-Starter/system/Filters/Filters.php(166): CodeIgniter\Autoloader\Autoloader->loadClass()
+#4 /workspace/CodeIgniter-4-Starter/system/CodeIgniter.php(393): CodeIgniter\Filters\Filters->run()
+#5 /workspace/CodeIgniter-4-Starter/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /workspace/CodeIgniter-4-Starter/public/index.php(39): CodeIgniter\CodeIgniter->run()
+#7 /workspace/CodeIgniter-4-Starter/system/Commands/Server/rewrite.php(43): require_once('...')
+#8 {main}
+CRITICAL - 2024-01-20 14:35:41 --> Interface "Codeigniter\Filters\FilterInterface" not found
+#0 /workspace/CodeIgniter-4-Starter/system/Autoloader/Autoloader.php(264): include_once()
+#1 /workspace/CodeIgniter-4-Starter/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#2 /workspace/CodeIgniter-4-Starter/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#3 /workspace/CodeIgniter-4-Starter/system/Filters/Filters.php(166): CodeIgniter\Autoloader\Autoloader->loadClass()
+#4 /workspace/CodeIgniter-4-Starter/system/CodeIgniter.php(393): CodeIgniter\Filters\Filters->run()
+#5 /workspace/CodeIgniter-4-Starter/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /workspace/CodeIgniter-4-Starter/public/index.php(39): CodeIgniter\CodeIgniter->run()
+#7 /workspace/CodeIgniter-4-Starter/system/Commands/Server/rewrite.php(43): require_once('...')
+#8 {main}

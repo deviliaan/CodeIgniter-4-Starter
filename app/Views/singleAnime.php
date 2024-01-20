@@ -18,7 +18,7 @@
             </div>
         </div>
     </div>
-    <div class="p-4 h-32 text-ellipsis overflow-hidden">
+    <div class="p-4 h-32 text-ellipsis">
         <?= $anime->synopsis?>
     </div>
 </div>

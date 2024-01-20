@@ -13,7 +13,6 @@
     <header>
       <?= view_cell('App\Libraries\Navbar::show') ?>
     </header>
-    <h1>Hello World</h1>
     <?= $this->renderSection('content') ?>
   </body>  
 </html>

@@ -6,8 +6,8 @@ class Home extends BaseController
 {
     public function index()
     {
-        $anime = new AnimeModel();
-        $res = $anime->orderBy('created_at','desc')->findAll();
-        return view('home',['anime'=>$res]);
+        $animes = new AnimeModel();
+        $res = $animes->orderBy('created_at','desc')->findAll();
+        return view('home',['animes'=>$res]);
     }
 }

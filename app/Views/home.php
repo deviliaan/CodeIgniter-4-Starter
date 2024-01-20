@@ -1,12 +1,12 @@
 <?= $this->extend('layouts/default') ?>
 <?= $this->section('content') ?>
-<div class="container bg-slate-800">
-    <div class="">
+<div class="container">
+    <div class="grid p-4 gap-2 grid-cols-2">
       <?php
-        echo '<pre>';
-        print_r($anime);
+        foreach($animes as $anime){ ?>
+          <?= view_cell('App\Libraries\Card::show',['anime'=>$anime]) ?>
+        <?php } ?>
       ?>
-      wellcome to codeigniter
     </div>
 </div>
 <?= $this->endSection()?>

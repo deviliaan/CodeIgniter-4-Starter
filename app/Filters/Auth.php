@@ -8,7 +8,7 @@ class Auth implements FilterInterface
 {
     public function before(RequestInterface $requestInterface,$arguments=null)
     {
-        if(!session()->get("isLoggedIn")){
+        if(!session()->has("isLoggedin")){
             return redirect()->to('/');
         }
     }

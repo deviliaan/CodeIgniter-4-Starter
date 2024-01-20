@@ -5,11 +5,25 @@ use CodeIgniter\HTTP\RequestTrait;
 class Admin extends BaseController {
     public function index()
     {
-        return view("admin-panel");
+        if($this->session->has('error')){
+            return view('admin-panel',['error'=>$this->session->get('error')]);
+        }else{
+            
+            return view("admin-panel");
+        }
+        
     }
     public function auth()
     {
-        return redirect()->to('/admin/recent');
+        $usrname = $_POST['username'];
+        $password = $_POST['password'];
+        if($usrname == 'Admin' && $password == 'Kousick12345@'){
+            $this->session->set('isLoggedin','true');
+            return redirect()->to('/admin/recent');          
+        }else{
+            $this->session->set('error','credential missmatch');
+            return redirect()->to('/admin-panel');
+        }
     }
 
     public function recent() {

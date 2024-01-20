@@ -32,7 +32,7 @@ $routes->setAutoRoute(false);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
-$routes->group('admin', function($route){
+$routes->group('admin',['filter'=>'auth'] ,function($route){
     $route->get('recent','Admin::recent');
     $route->get('anime/(:num)','Admin::anime/$1');
 });

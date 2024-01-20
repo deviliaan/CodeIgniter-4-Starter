@@ -21,7 +21,7 @@ $routes->setDefaultController('Home');
 $routes->setDefaultMethod('index');
 $routes->setTranslateURIDashes(false);
 $routes->set404Override();
-$routes->setAutoRoute(true);
+$routes->setAutoRoute(false);
 
 /*
  * --------------------------------------------------------------------
@@ -34,7 +34,9 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'Home::index');
 $routes->group('admin', function($route){
     $route->get('/recent','Admin::recent');
-});
+    $route->get('/anime/(:num)','Admin::anime/$1');
+},['filter'=>'auth']);
+$routes->get('/admin-panel','Admin::index');
 /*
  * --------------------------------------------------------------------
  * Additional Routing

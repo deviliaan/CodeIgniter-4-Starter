@@ -2,6 +2,11 @@
 namespace App\Controllers;
 
 class Admin extends BaseController {
+    public function index()
+    {
+        return view("admin-panel");
+    }
+    
     public function recent() {
         $data = $this->fetchDataFromApi();
         return view("admin",['items'=>$data['data']]);

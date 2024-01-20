@@ -7,6 +7,11 @@ class Admin extends BaseController {
         return view("admin",['items'=>$data['data']]);
     }
 
+    public function anime($slug){
+
+        $info = $this->fetchAnimeInfo($slug);
+        return view('singleAnime',['anime'=>$info]);
+    }
     function fetchDataFromApi() {
         $client = \Config\Services::curlrequest();
         try {
@@ -17,4 +22,15 @@ class Admin extends BaseController {
             return $e->getMessage();
         }
     }
+    function fetchAnimeInfo($slug){
+        $client = \Config\Services::curlrequest();
+        try {
+            $response = $client->get(getenv("API_END")."/anime/".$slug."/full");
+            $data = json_decode($response->getBody(), true);
+            return $data;
+        }catch (\Exception $e) {
+            return $e->getMessage();
+        }
+    }
+
 }

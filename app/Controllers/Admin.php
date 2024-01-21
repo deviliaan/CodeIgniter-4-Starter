@@ -44,7 +44,7 @@ class Admin extends BaseController {
         if($info){
             $data = [
                 'title'=> $info->title,
-                'genre'=> $info->genres,
+                'genre'=> json_encode($info->genres,true),
                 'type'=>$info->type,
                 'image'=>$info->images->jpg->image_url,
                 'latest_episode'=> $info->episodes,

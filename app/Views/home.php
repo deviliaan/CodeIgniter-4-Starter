@@ -6,7 +6,6 @@
         foreach($animes as $anime){ ?>
           <?= view_cell('App\Libraries\Card::show',['anime'=>$anime,'isAdmin'=>false]) ?>
         <?php } ?>
-      ?>
     </div>
 </div>
 <?= $this->endSection()?>

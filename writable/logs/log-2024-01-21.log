@@ -50,3 +50,27 @@ CRITICAL - 2024-01-21 02:07:27 --> Undefined property: stdClass::$email
 #4 /workspace/CodeIgniter-4-Starter/public/index.php(39): CodeIgniter\CodeIgniter->run()
 #5 /workspace/CodeIgniter-4-Starter/system/Commands/Server/rewrite.php(43): require_once('...')
 #6 {main}
+CRITICAL - 2024-01-21 02:25:54 --> Attempt to read property "title" on array
+#0 /workspace/CodeIgniter-4-Starter/app/Controllers/Admin.php(45): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /workspace/CodeIgniter-4-Starter/system/CodeIgniter.php(832): App\Controllers\Admin->create()
+#2 /workspace/CodeIgniter-4-Starter/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /workspace/CodeIgniter-4-Starter/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /workspace/CodeIgniter-4-Starter/public/index.php(39): CodeIgniter\CodeIgniter->run()
+#5 /workspace/CodeIgniter-4-Starter/system/Commands/Server/rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2024-01-21 02:27:36 --> Attempt to read property "title" on array
+#0 /workspace/CodeIgniter-4-Starter/app/Controllers/Admin.php(46): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /workspace/CodeIgniter-4-Starter/system/CodeIgniter.php(832): App\Controllers\Admin->create()
+#2 /workspace/CodeIgniter-4-Starter/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /workspace/CodeIgniter-4-Starter/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /workspace/CodeIgniter-4-Starter/public/index.php(39): CodeIgniter\CodeIgniter->run()
+#5 /workspace/CodeIgniter-4-Starter/system/Commands/Server/rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2024-01-21 02:28:12 --> Undefined property: stdClass::$title
+#0 /workspace/CodeIgniter-4-Starter/app/Controllers/Admin.php(46): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /workspace/CodeIgniter-4-Starter/system/CodeIgniter.php(832): App\Controllers\Admin->create()
+#2 /workspace/CodeIgniter-4-Starter/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /workspace/CodeIgniter-4-Starter/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /workspace/CodeIgniter-4-Starter/public/index.php(39): CodeIgniter\CodeIgniter->run()
+#5 /workspace/CodeIgniter-4-Starter/system/Commands/Server/rewrite.php(43): require_once('...')
+#6 {main}

@@ -18,8 +18,11 @@
             </div>
         </div>
     </div>
-    <div class="p-4 h-32 text-ellipsis">
+    <div class="p-4 truncate">
         <?= $anime->synopsis?>
+    </div>
+    <div class="p-2">
+        <a class="bg-orange-300 p-2 rounded" href="/admin/anime/create/<?= $anime->mal_id?>">Create</a>
     </div>
 </div>
 <?= $this->endSection() ?>

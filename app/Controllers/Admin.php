@@ -1,5 +1,6 @@
 <?php
 namespace App\Controllers;
+use App\Models\AnimeModel;
 use App\Models\UserModel;
 use CodeIgniter\HTTP\RequestTrait;
 
@@ -36,6 +37,28 @@ class Admin extends BaseController {
         
     }
 
+    public function create($slug) {
+        $model = new AnimeModel();
+        $info = $this->fetchAnimeInfo($slug);
+        $info = json_decode(json_encode($info['data']), FALSE);
+        if($info){
+            $data = [
+                'title'=> $info->title,
+                'genre'=> $info->genres,
+                'type'=>$info->type,
+                'image'=>$info->images->jpg->image_url,
+                'latest_episode'=> $info->episodes,
+                'year'=> $info->year,
+                'story'=> $info->synopsis,
+            ];
+            $res = $model->insert($data);
+            if($res){
+                return redirect()->to('/admin/recent');
+            }else{
+                return redirect()->to('/admin/recent');
+            }
+        }
+    }
     public function recent() {
         $data = $this->fetchDataFromApi();
         return view("admin",['items'=>$data['data']]);

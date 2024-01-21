@@ -1,0 +1,52 @@
+CRITICAL - 2024-01-21 01:21:10 --> Class "App\Models\UserModel" not found
+#0 /workspace/CodeIgniter-4-Starter/system/CodeIgniter.php(832): App\Controllers\Admin->auth()
+#1 /workspace/CodeIgniter-4-Starter/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /workspace/CodeIgniter-4-Starter/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /workspace/CodeIgniter-4-Starter/public/index.php(39): CodeIgniter\CodeIgniter->run()
+#4 /workspace/CodeIgniter-4-Starter/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2024-01-21 01:22:08 --> Class "App\Models\UserModel" not found
+#0 /workspace/CodeIgniter-4-Starter/system/CodeIgniter.php(832): App\Controllers\Admin->auth()
+#1 /workspace/CodeIgniter-4-Starter/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /workspace/CodeIgniter-4-Starter/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /workspace/CodeIgniter-4-Starter/public/index.php(39): CodeIgniter\CodeIgniter->run()
+#4 /workspace/CodeIgniter-4-Starter/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2024-01-21 01:23:29 --> Class "App\Models\UserModel" not found
+#0 /workspace/CodeIgniter-4-Starter/system/CodeIgniter.php(832): App\Controllers\Admin->auth()
+#1 /workspace/CodeIgniter-4-Starter/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /workspace/CodeIgniter-4-Starter/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /workspace/CodeIgniter-4-Starter/public/index.php(39): CodeIgniter\CodeIgniter->run()
+#4 /workspace/CodeIgniter-4-Starter/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2024-01-21 01:32:10 --> Object of class App\Models\UserModel could not be converted to string
+#0 /workspace/CodeIgniter-4-Starter/system/CodeIgniter.php(832): App\Controllers\Admin->auth()
+#1 /workspace/CodeIgniter-4-Starter/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /workspace/CodeIgniter-4-Starter/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /workspace/CodeIgniter-4-Starter/public/index.php(39): CodeIgniter\CodeIgniter->run()
+#4 /workspace/CodeIgniter-4-Starter/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2024-01-21 02:03:00 --> Undefined array key 0
+#0 /workspace/CodeIgniter-4-Starter/app/Controllers/Admin.php(19): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /workspace/CodeIgniter-4-Starter/system/CodeIgniter.php(832): App\Controllers\Admin->auth()
+#2 /workspace/CodeIgniter-4-Starter/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /workspace/CodeIgniter-4-Starter/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /workspace/CodeIgniter-4-Starter/public/index.php(39): CodeIgniter\CodeIgniter->run()
+#5 /workspace/CodeIgniter-4-Starter/system/Commands/Server/rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2024-01-21 02:03:58 --> Attempt to read property "email" on null
+#0 /workspace/CodeIgniter-4-Starter/app/Controllers/Admin.php(28): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /workspace/CodeIgniter-4-Starter/system/CodeIgniter.php(832): App\Controllers\Admin->auth()
+#2 /workspace/CodeIgniter-4-Starter/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /workspace/CodeIgniter-4-Starter/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /workspace/CodeIgniter-4-Starter/public/index.php(39): CodeIgniter\CodeIgniter->run()
+#5 /workspace/CodeIgniter-4-Starter/system/Commands/Server/rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2024-01-21 02:07:27 --> Undefined property: stdClass::$email
+#0 /workspace/CodeIgniter-4-Starter/app/Controllers/Admin.php(24): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /workspace/CodeIgniter-4-Starter/system/CodeIgniter.php(832): App\Controllers\Admin->auth()
+#2 /workspace/CodeIgniter-4-Starter/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /workspace/CodeIgniter-4-Starter/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /workspace/CodeIgniter-4-Starter/public/index.php(39): CodeIgniter\CodeIgniter->run()
+#5 /workspace/CodeIgniter-4-Starter/system/Commands/Server/rewrite.php(43): require_once('...')
+#6 {main}

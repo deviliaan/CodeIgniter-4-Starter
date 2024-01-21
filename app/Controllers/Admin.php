@@ -1,5 +1,6 @@
 <?php
 namespace App\Controllers;
+use App\Models\UserModel;
 use CodeIgniter\HTTP\RequestTrait;
 
 class Admin extends BaseController {
@@ -14,15 +15,25 @@ class Admin extends BaseController {
     }
     public function auth()
     {
-        $usrname = $_POST['username'];
-        $password = $_POST['password'];
-        if($usrname == 'Admin' && $password == 'Kousick12345@'){
-            $this->session->set('isLoggedin','true');
-            return redirect()->to('/admin/recent');          
+        $model = new UserModel();
+        $user = $model->where('email',$_POST['username'])->find();
+        if($user){
+            $user = (object)$user[0];
+            $usrname = $_POST['username'];
+            $password = $_POST['password'];
+            if($usrname == $user->email && $password == $user->password){
+                $this->session->set('isLoggedin','true');
+                return redirect()->to('/admin/recent');          
+            } else {
+                $this->session->setFlashdata('error', 'credentials missmatch');
+                return redirect()->to('/admin-panel');
+            }
         }else{
-            $this->session->setFlashdata('error','credentials missmatch');
+            $this->session->setFlashdata('error','No User Found');
             return redirect()->to('/admin-panel');
         }
+         
+        
     }
 
     public function recent() {

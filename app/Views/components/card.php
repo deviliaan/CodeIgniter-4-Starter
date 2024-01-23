@@ -1,4 +1,4 @@
-<a href="<?= $isAdmin? '#':'/content/anime/'.$anime->id ?>" class="border border-orange-300" id="card">
+<a href="<?= $isAdmin? '#':'/content/anime/'.$anime->id ?>" class="border border-orange-300" id="btn">
     <img class="h-[80%] object-cover w-full" src="<?= $isAdmin? $anime->thumbnail: $anime->image; ?>"/>
     <div class="px-2 w-full">
         <h2 class="truncate text-sm" id="title"><?= $anime->title;?></h2>

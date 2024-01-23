@@ -1,16 +1,11 @@
 $(document).ready(function () {
     
 
-    $("#card").click(function (e) { 
+    $("#btn").click(function (e) { 
         e.preventDefault();
-        var title = $("#title").text();
-        $.ajax({
-            type: "GET",
-            url: `/admin/api/${title}`,
-            success: function (response) {
-                $('#card').html(JSON.stringify(response));
-            }
-        });
+        var title = 
+        $("#btn").html('<h2>wellcome</h2>');
+        
     });
 
 });

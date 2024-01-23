@@ -1,0 +1,36 @@
+CRITICAL - 2024-01-23 16:42:11 --> The framework needs the following extension(s) installed and loaded: curl, xml.
+#0 /root/Documents/CodeIgniter-4-Starter/system/CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension()
+#1 /root/Documents/CodeIgniter-4-Starter/system/CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 /root/Documents/CodeIgniter-4-Starter/system/bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 /root/Documents/CodeIgniter-4-Starter/spark(45): require('...')
+#4 {main}
+CRITICAL - 2024-01-23 16:44:00 --> The framework needs the following extension(s) installed and loaded: curl, xml.
+#0 /root/Documents/CodeIgniter-4-Starter/system/CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension()
+#1 /root/Documents/CodeIgniter-4-Starter/system/CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 /root/Documents/CodeIgniter-4-Starter/system/bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 /root/Documents/CodeIgniter-4-Starter/spark(45): require('...')
+#4 {main}
+CRITICAL - 2024-01-23 16:45:54 --> The framework needs the following extension(s) installed and loaded: curl, xml.
+#0 /root/Documents/CodeIgniter-4-Starter/system/CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension()
+#1 /root/Documents/CodeIgniter-4-Starter/system/CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 /root/Documents/CodeIgniter-4-Starter/system/bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 /root/Documents/CodeIgniter-4-Starter/spark(45): require('...')
+#4 {main}
+CRITICAL - 2024-01-23 16:53:04 --> The framework needs the following extension(s) installed and loaded: curl, xml.
+#0 /root/Documents/CodeIgniter-4-Starter/system/CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension()
+#1 /root/Documents/CodeIgniter-4-Starter/system/CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 /root/Documents/CodeIgniter-4-Starter/system/bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 /root/Documents/CodeIgniter-4-Starter/spark(45): require('...')
+#4 {main}
+CRITICAL - 2024-01-23 16:53:18 --> The framework needs the following extension(s) installed and loaded: curl, xml.
+#0 /root/Documents/CodeIgniter-4-Starter/system/CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension()
+#1 /root/Documents/CodeIgniter-4-Starter/system/CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 /root/Documents/CodeIgniter-4-Starter/system/bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 /root/Documents/CodeIgniter-4-Starter/spark(45): require('...')
+#4 {main}
+CRITICAL - 2024-01-23 16:56:22 --> The framework needs the following extension(s) installed and loaded: xml.
+#0 /root/Documents/CodeIgniter-4-Starter/system/CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension()
+#1 /root/Documents/CodeIgniter-4-Starter/system/CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 /root/Documents/CodeIgniter-4-Starter/system/bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 /root/Documents/CodeIgniter-4-Starter/spark(45): require('...')
+#4 {main}

@@ -1,14 +1,16 @@
 $(document).ready(function () {
     
 
-    $('#card').click(function (e) { 
+    $("#card").click(function (e) { 
         e.preventDefault();
-        var title = $('#title').val();
-        $.get(`/admin/api/${title}`, data,
-            function (data, textStatus, jqXHR) {
-                $('#val').val(data);
-            },
-        );
+        var title = $("#title").text();
+        $.ajax({
+            type: "GET",
+            url: `/admin/api/${title}`,
+            success: function (response) {
+                $('#card').html(JSON.stringify(response));
+            }
+        });
     });
 
 });

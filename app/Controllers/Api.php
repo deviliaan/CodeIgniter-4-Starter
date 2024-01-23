@@ -16,11 +16,9 @@ class Api extends BaseController
         $anime = $provider->where("title", $title)->first();
         if(empty($anime)) {
             $status = array('code'=>404);
-            header("Content-Type: application/json");
-            echo json_encode($status);
+            return $this->response->setJSON($status);
         }else{
-            header("Content-Type: application/json");
-            echo json_encode($anime);
+            return $this->response->setJSON($anime);
         }
     }
 }

@@ -181,3 +181,27 @@ CRITICAL - 2024-01-23 07:31:09 --> Undefined property: stdClass::$id
 #15 /workspace/CodeIgniter-4-Starter/public/index.php(39): CodeIgniter\CodeIgniter->run()
 #16 /workspace/CodeIgniter-4-Starter/system/Commands/Server/rewrite.php(43): require_once('...')
 #17 {main}
+CRITICAL - 2024-01-23 08:03:17 --> Undefined variable $anime
+#0 /workspace/CodeIgniter-4-Starter/app/Controllers/Api.php(18): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /workspace/CodeIgniter-4-Starter/system/CodeIgniter.php(832): App\Controllers\Api->info()
+#2 /workspace/CodeIgniter-4-Starter/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /workspace/CodeIgniter-4-Starter/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /workspace/CodeIgniter-4-Starter/public/index.php(39): CodeIgniter\CodeIgniter->run()
+#5 /workspace/CodeIgniter-4-Starter/system/Commands/Server/rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2024-01-23 08:04:20 --> Call to undefined method App\Models\AnimeModel::getAnime
+#0 /workspace/CodeIgniter-4-Starter/app/Controllers/Api.php(16): CodeIgniter\Model->__call()
+#1 /workspace/CodeIgniter-4-Starter/system/CodeIgniter.php(832): App\Controllers\Api->info()
+#2 /workspace/CodeIgniter-4-Starter/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /workspace/CodeIgniter-4-Starter/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /workspace/CodeIgniter-4-Starter/public/index.php(39): CodeIgniter\CodeIgniter->run()
+#5 /workspace/CodeIgniter-4-Starter/system/Commands/Server/rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2024-01-23 08:04:44 --> Call to undefined method App\Models\AnimeModel::getAnime
+#0 /workspace/CodeIgniter-4-Starter/app/Controllers/Api.php(16): CodeIgniter\Model->__call()
+#1 /workspace/CodeIgniter-4-Starter/system/CodeIgniter.php(832): App\Controllers\Api->info()
+#2 /workspace/CodeIgniter-4-Starter/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /workspace/CodeIgniter-4-Starter/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /workspace/CodeIgniter-4-Starter/public/index.php(39): CodeIgniter\CodeIgniter->run()
+#5 /workspace/CodeIgniter-4-Starter/system/Commands/Server/rewrite.php(43): require_once('...')
+#6 {main}

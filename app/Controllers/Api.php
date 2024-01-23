@@ -13,8 +13,14 @@ class Api extends BaseController
     public function info($title)
     {
         $provider = new AnimeModel();
-        $anime = $provider->getAnime($title);
-        echo '<pre>';
-        echo $anime;
+        $anime = $provider->where("title", $title)->first();
+        if(empty($anime)) {
+            $status = array('code'=>404);
+            header("Content-Type: application/json");
+            echo json_encode($status);
+        }else{
+            header("Content-Type: application/json");
+            echo json_encode($anime);
+        }
     }
 }

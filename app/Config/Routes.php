@@ -37,7 +37,7 @@ $routes->group('admin',['filter'=>'auth'] ,function($route){
     $route->get('logout','Admin::logout');
     $route->get('anime/(:num)','Admin::anime/$1');
     $route->get('anime/create/(:num)','Admin::create/$1');
-    $route->get('api/(:string)','Api::info');
+    $route->get('api/(:any)','Api::info/$1');
 });
 $routes->get('/admin-panel','Admin::index',['filter'=>'noauth']);
 $routes->post('/admin-panel','Admin::auth',['filter'=>'noauth']);

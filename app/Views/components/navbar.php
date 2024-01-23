@@ -1,11 +1,11 @@
 <nav class="flex items-center h-16 p-4 justify-between">
-  <img class="w-8 h-8" src="/icons/icon.svg"/>
+  <i class="fa-solid fa-burger fa-2xl"></i>
   <div class="hidden sm:hidden">
     <a href="/">Homepage</a>
     <a href="/dub">Dubbed</a>
   </div>
   <button onclick="handleToggle()" id="menu-btn" class="w-8 h-8 md:hidden">
-    <img clas="w-8 h-8" src="/icons/ham.svg"/>
+    <i class="fa-solid fa-bars fa-2xl"></i>
   </button>
 </nav>
 <div class="hidden flex p-2 flex-col" id="mobile-menu">

@@ -7,4 +7,5 @@
         <?php } ?>
     </div>
 </div>
+<script src="/js/recent.js"></script>
 <?= $this->endSection() ?>

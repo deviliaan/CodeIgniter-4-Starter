@@ -61,7 +61,8 @@ class Admin extends BaseController {
     }
     public function recent() {
         $data = $this->fetchDataFromApi();
-        return view("admin",['items'=>$data['data']]);
+        $items = json_decode(json_encode($data), FALSE);
+        return view("admin",['items'=>$items]);
     }
 
     public function anime($slug){
@@ -73,7 +74,7 @@ class Admin extends BaseController {
     function fetchDataFromApi() {
         $client = \Config\Services::curlrequest();
         try {
-            $response = $client->get("https://api.jikan.moe/v4/watch/episodes");
+            $response = $client->get("https://anime-api.xyz/page-1");
             $data = json_decode($response->getBody(), true);
             return $data;
         }catch (\Exception $e) {

@@ -61,8 +61,7 @@ class Admin extends BaseController {
     }
     public function recent() {
         $data = $this->fetchDataFromApi();
-        $items = json_decode(json_encode($data), FALSE);
-        return view("admin",['items'=>$items]);
+        return view("admin",['items'=>$data]);
     }
 
     public function anime($slug){

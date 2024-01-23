@@ -40,6 +40,10 @@ $routes->group('admin',['filter'=>'auth'] ,function($route){
 });
 $routes->get('/admin-panel','Admin::index',['filter'=>'noauth']);
 $routes->post('/admin-panel','Admin::auth',['filter'=>'noauth']);
+$routes->group('content',function($route){
+    $route->get('anime/(:num)','Content::single/$1');
+});
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing
